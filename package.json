@@ -1,0 +1,28 @@
+{
+  "name": "fileupload",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:local": "vite --host --mode LOCAL",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "start:local": "concurrently \"npm run server\" \"npm run dev:local\"",
+    "server": "nodemon server/index.js",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "navigo": "^8.11.1"
+  }
+}
